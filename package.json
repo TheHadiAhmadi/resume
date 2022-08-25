@@ -18,7 +18,7 @@
 	"dependencies": {
 		"@iconify/svelte": "^2.2.1",
 		"puppeteer-core": "latest",
-		"chromw-awas-lambda": "latest",
+		"chrome-aws-lambda": "latest",
 		"vite-plugin-windicss": "^1.8.7",
 		"windicss": "^3.5.6"
 	}
