@@ -4,6 +4,7 @@
   import Sidebar from "../lib/components/Sidebar.svelte";
 
   export let data;
+  $: console.log(data)
 </script>
 
 <div class="flex bg-gray-200 flex-col">

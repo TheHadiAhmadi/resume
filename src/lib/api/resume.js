@@ -44,8 +44,8 @@ export async function getResume(id) {
         overview: resume.overview,
         experiences: experiences.map(experience => ({
             role: experience.role,
-            isRemote: experiences.isRemote,
-            isFulltime: experience.isFulltime,
+            isRemote: experience.isRemote === 'true' ? true : false,
+            isFulltime: experience.isFulltime === 'true' ? true : false,
             description: experience.description,
             company: {
                 name: experience.company_name,
@@ -61,7 +61,7 @@ export async function getResume(id) {
             }
         })),
         skills: skills.map(skill => skill.name),
-        contacts: contacts.map(contact => ({icon: contact.icon, value: contact.value})),
+        contact: contacts.map(contact => ({icon: contact.icon, value: contact.value})),
         projects
     }
 }

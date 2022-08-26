@@ -6,8 +6,8 @@
   import Info from "./Info.svelte";
 
   import SidebarCard from "./SidebarCard.svelte";
-  export let contact;
-  export let skills;
+  export let contact = [];
+  export let skills = [];
 </script>
 
 <div class="flex flex-col gap-2 mt-2">

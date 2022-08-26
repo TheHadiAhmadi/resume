@@ -4,9 +4,9 @@ import ExperienceCard from "./ExperienceCard.svelte";
   import MainSection from "./MainSection.svelte";
 import Project from "./Project.svelte";
 
-  export let overview;
-  export let experiences;
-  export let projects;
+  export let overview = '';
+  export let experiences = [];
+  export let projects = [];
 </script>
 
 <div class="bg-gray-300 p-4 w-full">

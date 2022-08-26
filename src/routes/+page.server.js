@@ -59,7 +59,5 @@ export async function load() {
 //     projects: ["Todo", "Chat App", "Minibase", "Games", "Svind"],
 //   };
 
-  return {
-      data
-  }
+  return data
 }
