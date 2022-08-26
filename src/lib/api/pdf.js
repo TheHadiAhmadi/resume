@@ -10,7 +10,7 @@ export async function generatePDF(origin, name) {
     }
 
     let url = origin;
-    if(name) url += '?name=' + name
+    if(name) url += '/' + name
 
     const options = {
         url,
