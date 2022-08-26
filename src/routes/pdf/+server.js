@@ -31,13 +31,14 @@ export async function GET({request}) {
             printBackground: true
         }
     }
-    console.log(options)
+    const body = JSON.stringify(options)
+    console.log(body)
     const res = await fetch('https://chrome.browserless.io/pdf?token=' + token, {
         method: 'POST',
         headers: {
             'Cache-Control': 'no-cache',
             'Content-Type': 'application/json',
-            body: JSON.stringify(options)
+            body
         }
     })
     
