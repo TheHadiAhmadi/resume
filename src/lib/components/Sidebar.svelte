@@ -13,8 +13,8 @@
 <div class="flex flex-col gap-2 mt-2">
   <SidebarCard title="Personal Info">
     <div class="flex flex-col">
-      {#each contact as { name, value }}
-        <Info icon={name} {value} />
+      {#each contact as { icon, value }}
+        <Info {icon} {value} />
       {/each}
     </div>
   </SidebarCard>
