@@ -1,5 +1,8 @@
 <script>
+import Resume from "../../lib/components/Resume.svelte";
+
+
     export let data;
 </script>
 
-{JSON.stringify(data)}
+<Resume {data} />
