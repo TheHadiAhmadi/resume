@@ -38,8 +38,8 @@ export async function GET({request}) {
         headers: {
             'Cache-Control': 'no-cache',
             'Content-Type': 'application/json',
-            body
-        }
+        },
+        body
     })
     
     return res;
