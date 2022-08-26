@@ -6,6 +6,7 @@
   export let value;
 </script>
 
+
 <div class="py-1 text-sm flex items-center text-gray-700 bg-gradient-to-b from-transparent to-transparent via-black/5">
   <Icon name={icon} />
 
