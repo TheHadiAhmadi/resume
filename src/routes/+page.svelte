@@ -2,9 +2,10 @@
   import Header from "$lib/components/Header.svelte";
   import Main from "../lib/components/Main.svelte";
   import Sidebar from "../lib/components/Sidebar.svelte";
+  import {page} from '$app/stores'
 
   let data = {
-    name: "Hadi Ahmadi",
+    name: $page.searchParams.get('name') ?? "Hadi Ahmadi",
     header: "Fullstack Web Developer",
     contact: [
         {name: 'www', value: 'https://hadiahmadi.pages.dev'},
@@ -22,26 +23,26 @@
     Node.js and Working with databases like MySQL, PostgreSQL and MongoDB.
         `,
       experiences: [
-        {
-          role: "Frontend Developer",
-          isRemote: true,
-          company: {
-            name: "uBeac",
-            logo: "/ubeac-logo.jpeg",
-            location: {
-              country: "Canada",
-              city: "Toronto",
-            },
-          },
-          isFulltime: true,
-          date: {
-              start: 'Dec 2021',
-              end: 'Present'
-          },
+        // {
+        //   role: "Frontend Developer",
+        //   isRemote: true,
+        //   company: {
+        //     name: "uBeac",
+        //     logo: "/ubeac-logo.jpeg",
+        //     location: {
+        //       country: "Canada",
+        //       city: "Toronto",
+        //     },
+        //   },
+        //   isFulltime: true,
+        //   date: {
+        //       start: 'Dec 2021',
+        //       end: 'Present'
+        //   },
 
-          description: `in uBeac we're working on Developing a Component library for svelte which we
-          developed more than 60 Customizable & Performant UI components to make web development easier`,
-        },
+        //   description: `in uBeac we're working on Developing a Component library for svelte which we
+        //   developed more than 60 Customizable & Performant UI components to make web development easier`,
+        // },
       ],
     projects: [
         'Todo',
